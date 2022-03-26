@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Search = ({handleChange}) => {
-  return (
-    <div>
-        <h1>Search a crypto</h1>
-        <form>
-            <input type="text" placeholder='Search' onChange={handleChange} />
-        </form>
-    </div>
-  )
-}
+const Search = ({ handleChange }) => (
+  <div className="search">
+    <form>
+      <input type="text" placeholder="Search" onChange={handleChange} />
+    </form>
+  </div>
+);
 
-export default Search
+Search.propTypes = {
+  handleChange: PropTypes.func.isRequired,
+};
+export default Search;
