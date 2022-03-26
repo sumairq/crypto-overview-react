@@ -4,7 +4,7 @@ import PrintDetails from '../components/PrintDetails';
 import store from '../redux/configureStore';
 
 test('matches voice search component snapshot', () => {
-  const stock = {
+  const coin = {
     id: 'bitcoin',
     symbol: 'btc',
     name: 'Bitcoin',
@@ -24,7 +24,7 @@ test('matches voice search component snapshot', () => {
 
   const tree = renderer.create(
     <Provider store={store}>
-      <PrintDetails data={stock} />
+      <PrintDetails data={coin} />
     </Provider>,
   ).toJSON();
   expect(tree).toMatchSnapshot();
