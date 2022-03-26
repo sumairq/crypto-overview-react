@@ -1,6 +1,6 @@
 // Action Types
 const GET_COINS = 'space-travelers/coins/GET_COINS';
-const baseURL = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false';
+const baseURL = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=99&page=1&sparkline=false';
 
 // ACTION CREATORS
 
@@ -23,6 +23,7 @@ export const fetchCoinsFromApi = () => async (dispatch) => {
     market_cap: coin.market_cap,
     image: coin.image,
     total_volume: coin.total_volume,
+    price_change_percentage: coin.price_change_percentage_24h,
   }));
 
   dispatch(getCoins(coinsToDispatch));
