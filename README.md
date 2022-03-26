@@ -4,7 +4,7 @@
 
 ![Preview](./screenshot.png)
 ##  Live Link
- [Heroku Link](https://crypto-watche-sam.herokuapp.com/)  
+ [Netlify Link](https://exquisite-churros-0ae33e.netlify.app/)  
 ##  Presentation
  [Presentation video link](https://www.loom.com/share/728f490c47634b30bcd03fd6005e715e)  
 
