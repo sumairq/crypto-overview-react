@@ -11,9 +11,6 @@ const CoinDetails = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getDetailsFromApi(coin));
-    // return () => {
-    //   dispatch(removeDetailsData());
-    // };
   }, []);
 
   return (

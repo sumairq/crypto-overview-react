@@ -10,7 +10,6 @@ const getDetails = (payload) => ({
 });
 
 export const getDetailsFromApi = (coin) => async (dispatch) => {
-  // const details = await axios.get(`https://financialmodelingprep.com/api/v3/quote/${ticker.symbol}?apikey=58688fe7d21b8bb780234c39f6229ac3`);
   const details = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coin.coinId}&order=market_cap_desc&per_page=100&page=1&sparkline=false`);
   dispatch(getDetails(details.data));
 };

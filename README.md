@@ -1,7 +1,11 @@
-# Market Overview
+# Crypto Watcher (Crypto Market Overview)
 
 > Crypto Watcher is a website designed to showcase the crypto market. You could find details about individual crypto currency and inform your investment descisions. Built using React, Redux, React Router and tested using React testing library.
 
+![Preview](./screenshot.png)
+
+##  Presentation
+ [Presentation video link](https://www.loom.com/share/728f490c47634b30bcd03fd6005e715e)  
 
 ## Built With
 

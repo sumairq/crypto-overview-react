@@ -2,13 +2,27 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
 import { RiSettings5Fill } from 'react-icons/ri';
+import { MdArrowBackIos } from 'react-icons/md';
 
 const Header = () => (
   <header>
     <div className="logo">
       <NavLink className="rmvLink" to="/">
-        Crypto
-        <span>Watcher</span>
+        {({ isActive }) => (isActive
+          ? (
+            <p>
+              Crypto
+              <span>Watcher</span>
+            </p>
+          )
+          : (
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <MdArrowBackIos style={{ marginLeft: '1rem', fontSize: '1.5rem' }} />
+              <p>Back</p>
+            </div>
+          )
+        )}
+
       </NavLink>
     </div>
 
